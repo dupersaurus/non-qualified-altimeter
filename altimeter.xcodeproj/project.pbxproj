@@ -1,0 +1,876 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2935E4F52209F751005AE439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E4F42209F751005AE439 /* AppDelegate.swift */; };
+		2935E4F72209F751005AE439 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E4F62209F751005AE439 /* ViewController.swift */; };
+		2935E4FA2209F751005AE439 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2935E4F82209F751005AE439 /* Main.storyboard */; };
+		2935E4FC2209F753005AE439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2935E4FB2209F753005AE439 /* Assets.xcassets */; };
+		2935E4FF2209F753005AE439 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2935E4FD2209F753005AE439 /* LaunchScreen.storyboard */; };
+		2935E50A2209F753005AE439 /* altimeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E5092209F753005AE439 /* altimeterTests.swift */; };
+		2935E5152209F753005AE439 /* altimeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E5142209F753005AE439 /* altimeterUITests.swift */; };
+		2935E51A2209F753005AE439 /* altimeter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2935E5192209F753005AE439 /* altimeter WatchKit App.app */; };
+		2935E5202209F753005AE439 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2935E51E2209F753005AE439 /* Interface.storyboard */; };
+		2935E5222209F753005AE439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2935E5212209F753005AE439 /* Assets.xcassets */; };
+		2935E5292209F754005AE439 /* altimeter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2935E5282209F754005AE439 /* altimeter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2935E52E2209F754005AE439 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E52D2209F754005AE439 /* InterfaceController.swift */; };
+		2935E5302209F754005AE439 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E52F2209F754005AE439 /* ExtensionDelegate.swift */; };
+		2935E5322209F754005AE439 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E5312209F754005AE439 /* NotificationController.swift */; };
+		2935E5342209F754005AE439 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E5332209F754005AE439 /* ComplicationController.swift */; };
+		2935E5362209F754005AE439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2935E5352209F754005AE439 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2935E5062209F753005AE439 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2935E4E92209F751005AE439 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2935E4F02209F751005AE439;
+			remoteInfo = altimeter;
+		};
+		2935E5112209F753005AE439 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2935E4E92209F751005AE439 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2935E4F02209F751005AE439;
+			remoteInfo = altimeter;
+		};
+		2935E51B2209F753005AE439 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2935E4E92209F751005AE439 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2935E5182209F753005AE439;
+			remoteInfo = "altimeter WatchKit App";
+		};
+		2935E52A2209F754005AE439 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2935E4E92209F751005AE439 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2935E5272209F754005AE439;
+			remoteInfo = "altimeter WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2935E53E2209F754005AE439 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2935E5292209F754005AE439 /* altimeter WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2935E5422209F754005AE439 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2935E51A2209F753005AE439 /* altimeter WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2935E4F12209F751005AE439 /* altimeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = altimeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2935E4F42209F751005AE439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2935E4F62209F751005AE439 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2935E4F92209F751005AE439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2935E4FB2209F753005AE439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2935E4FE2209F753005AE439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2935E5002209F753005AE439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2935E5052209F753005AE439 /* altimeterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = altimeterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2935E5092209F753005AE439 /* altimeterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = altimeterTests.swift; sourceTree = "<group>"; };
+		2935E50B2209F753005AE439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2935E5102209F753005AE439 /* altimeterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = altimeterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2935E5142209F753005AE439 /* altimeterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = altimeterUITests.swift; sourceTree = "<group>"; };
+		2935E5162209F753005AE439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2935E5192209F753005AE439 /* altimeter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "altimeter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2935E51F2209F753005AE439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2935E5212209F753005AE439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2935E5232209F754005AE439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2935E5282209F754005AE439 /* altimeter WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "altimeter WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2935E52D2209F754005AE439 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2935E52F2209F754005AE439 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2935E5312209F754005AE439 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		2935E5332209F754005AE439 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		2935E5352209F754005AE439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2935E5372209F754005AE439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2935E5382209F754005AE439 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2935E4EE2209F751005AE439 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2935E5022209F753005AE439 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2935E50D2209F753005AE439 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2935E5252209F754005AE439 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2935E4E82209F751005AE439 = {
+			isa = PBXGroup;
+			children = (
+				2935E4F32209F751005AE439 /* altimeter */,
+				2935E5082209F753005AE439 /* altimeterTests */,
+				2935E5132209F753005AE439 /* altimeterUITests */,
+				2935E51D2209F753005AE439 /* altimeter WatchKit App */,
+				2935E52C2209F754005AE439 /* altimeter WatchKit Extension */,
+				2935E4F22209F751005AE439 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2935E4F22209F751005AE439 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2935E4F12209F751005AE439 /* altimeter.app */,
+				2935E5052209F753005AE439 /* altimeterTests.xctest */,
+				2935E5102209F753005AE439 /* altimeterUITests.xctest */,
+				2935E5192209F753005AE439 /* altimeter WatchKit App.app */,
+				2935E5282209F754005AE439 /* altimeter WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2935E4F32209F751005AE439 /* altimeter */ = {
+			isa = PBXGroup;
+			children = (
+				2935E4F42209F751005AE439 /* AppDelegate.swift */,
+				2935E4F62209F751005AE439 /* ViewController.swift */,
+				2935E4F82209F751005AE439 /* Main.storyboard */,
+				2935E4FB2209F753005AE439 /* Assets.xcassets */,
+				2935E4FD2209F753005AE439 /* LaunchScreen.storyboard */,
+				2935E5002209F753005AE439 /* Info.plist */,
+			);
+			path = altimeter;
+			sourceTree = "<group>";
+		};
+		2935E5082209F753005AE439 /* altimeterTests */ = {
+			isa = PBXGroup;
+			children = (
+				2935E5092209F753005AE439 /* altimeterTests.swift */,
+				2935E50B2209F753005AE439 /* Info.plist */,
+			);
+			path = altimeterTests;
+			sourceTree = "<group>";
+		};
+		2935E5132209F753005AE439 /* altimeterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2935E5142209F753005AE439 /* altimeterUITests.swift */,
+				2935E5162209F753005AE439 /* Info.plist */,
+			);
+			path = altimeterUITests;
+			sourceTree = "<group>";
+		};
+		2935E51D2209F753005AE439 /* altimeter WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2935E51E2209F753005AE439 /* Interface.storyboard */,
+				2935E5212209F753005AE439 /* Assets.xcassets */,
+				2935E5232209F754005AE439 /* Info.plist */,
+			);
+			path = "altimeter WatchKit App";
+			sourceTree = "<group>";
+		};
+		2935E52C2209F754005AE439 /* altimeter WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2935E52D2209F754005AE439 /* InterfaceController.swift */,
+				2935E52F2209F754005AE439 /* ExtensionDelegate.swift */,
+				2935E5312209F754005AE439 /* NotificationController.swift */,
+				2935E5332209F754005AE439 /* ComplicationController.swift */,
+				2935E5352209F754005AE439 /* Assets.xcassets */,
+				2935E5372209F754005AE439 /* Info.plist */,
+				2935E5382209F754005AE439 /* PushNotificationPayload.apns */,
+			);
+			path = "altimeter WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2935E4F02209F751005AE439 /* altimeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2935E5432209F754005AE439 /* Build configuration list for PBXNativeTarget "altimeter" */;
+			buildPhases = (
+				2935E4ED2209F751005AE439 /* Sources */,
+				2935E4EE2209F751005AE439 /* Frameworks */,
+				2935E4EF2209F751005AE439 /* Resources */,
+				2935E5422209F754005AE439 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2935E51C2209F753005AE439 /* PBXTargetDependency */,
+			);
+			name = altimeter;
+			productName = altimeter;
+			productReference = 2935E4F12209F751005AE439 /* altimeter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2935E5042209F753005AE439 /* altimeterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2935E5462209F754005AE439 /* Build configuration list for PBXNativeTarget "altimeterTests" */;
+			buildPhases = (
+				2935E5012209F753005AE439 /* Sources */,
+				2935E5022209F753005AE439 /* Frameworks */,
+				2935E5032209F753005AE439 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2935E5072209F753005AE439 /* PBXTargetDependency */,
+			);
+			name = altimeterTests;
+			productName = altimeterTests;
+			productReference = 2935E5052209F753005AE439 /* altimeterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2935E50F2209F753005AE439 /* altimeterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2935E5492209F754005AE439 /* Build configuration list for PBXNativeTarget "altimeterUITests" */;
+			buildPhases = (
+				2935E50C2209F753005AE439 /* Sources */,
+				2935E50D2209F753005AE439 /* Frameworks */,
+				2935E50E2209F753005AE439 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2935E5122209F753005AE439 /* PBXTargetDependency */,
+			);
+			name = altimeterUITests;
+			productName = altimeterUITests;
+			productReference = 2935E5102209F753005AE439 /* altimeterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		2935E5182209F753005AE439 /* altimeter WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2935E53F2209F754005AE439 /* Build configuration list for PBXNativeTarget "altimeter WatchKit App" */;
+			buildPhases = (
+				2935E5172209F753005AE439 /* Resources */,
+				2935E53E2209F754005AE439 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2935E52B2209F754005AE439 /* PBXTargetDependency */,
+			);
+			name = "altimeter WatchKit App";
+			productName = "altimeter WatchKit App";
+			productReference = 2935E5192209F753005AE439 /* altimeter WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2935E5272209F754005AE439 /* altimeter WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2935E53B2209F754005AE439 /* Build configuration list for PBXNativeTarget "altimeter WatchKit Extension" */;
+			buildPhases = (
+				2935E5242209F754005AE439 /* Sources */,
+				2935E5252209F754005AE439 /* Frameworks */,
+				2935E5262209F754005AE439 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "altimeter WatchKit Extension";
+			productName = "altimeter WatchKit Extension";
+			productReference = 2935E5282209F754005AE439 /* altimeter WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2935E4E92209F751005AE439 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = jdp;
+				TargetAttributes = {
+					2935E4F02209F751005AE439 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					2935E5042209F753005AE439 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2935E4F02209F751005AE439;
+					};
+					2935E50F2209F753005AE439 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2935E4F02209F751005AE439;
+					};
+					2935E5182209F753005AE439 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					2935E5272209F754005AE439 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 2935E4EC2209F751005AE439 /* Build configuration list for PBXProject "altimeter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2935E4E82209F751005AE439;
+			productRefGroup = 2935E4F22209F751005AE439 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2935E4F02209F751005AE439 /* altimeter */,
+				2935E5042209F753005AE439 /* altimeterTests */,
+				2935E50F2209F753005AE439 /* altimeterUITests */,
+				2935E5182209F753005AE439 /* altimeter WatchKit App */,
+				2935E5272209F754005AE439 /* altimeter WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2935E4EF2209F751005AE439 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2935E4FF2209F753005AE439 /* LaunchScreen.storyboard in Resources */,
+				2935E4FC2209F753005AE439 /* Assets.xcassets in Resources */,
+				2935E4FA2209F751005AE439 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2935E5032209F753005AE439 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2935E50E2209F753005AE439 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2935E5172209F753005AE439 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2935E5222209F753005AE439 /* Assets.xcassets in Resources */,
+				2935E5202209F753005AE439 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2935E5262209F754005AE439 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2935E5362209F754005AE439 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2935E4ED2209F751005AE439 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2935E4F72209F751005AE439 /* ViewController.swift in Sources */,
+				2935E4F52209F751005AE439 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2935E5012209F753005AE439 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2935E50A2209F753005AE439 /* altimeterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2935E50C2209F753005AE439 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2935E5152209F753005AE439 /* altimeterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2935E5242209F754005AE439 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2935E5322209F754005AE439 /* NotificationController.swift in Sources */,
+				2935E5342209F754005AE439 /* ComplicationController.swift in Sources */,
+				2935E5302209F754005AE439 /* ExtensionDelegate.swift in Sources */,
+				2935E52E2209F754005AE439 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2935E5072209F753005AE439 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2935E4F02209F751005AE439 /* altimeter */;
+			targetProxy = 2935E5062209F753005AE439 /* PBXContainerItemProxy */;
+		};
+		2935E5122209F753005AE439 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2935E4F02209F751005AE439 /* altimeter */;
+			targetProxy = 2935E5112209F753005AE439 /* PBXContainerItemProxy */;
+		};
+		2935E51C2209F753005AE439 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2935E5182209F753005AE439 /* altimeter WatchKit App */;
+			targetProxy = 2935E51B2209F753005AE439 /* PBXContainerItemProxy */;
+		};
+		2935E52B2209F754005AE439 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2935E5272209F754005AE439 /* altimeter WatchKit Extension */;
+			targetProxy = 2935E52A2209F754005AE439 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2935E4F82209F751005AE439 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2935E4F92209F751005AE439 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2935E4FD2209F753005AE439 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2935E4FE2209F753005AE439 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2935E51E2209F753005AE439 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2935E51F2209F753005AE439 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2935E5392209F754005AE439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2935E53A2209F754005AE439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2935E53C2209F754005AE439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5SSV796L2;
+				INFOPLIST_FILE = "altimeter WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jdp.altimeter.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		2935E53D2209F754005AE439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5SSV796L2;
+				INFOPLIST_FILE = "altimeter WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jdp.altimeter.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		2935E5402209F754005AE439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5SSV796L2;
+				IBSC_MODULE = altimeter_WatchKit_Extension;
+				INFOPLIST_FILE = "altimeter WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = jdp.altimeter.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		2935E5412209F754005AE439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5SSV796L2;
+				IBSC_MODULE = altimeter_WatchKit_Extension;
+				INFOPLIST_FILE = "altimeter WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = jdp.altimeter.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		2935E5442209F754005AE439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5SSV796L2;
+				INFOPLIST_FILE = altimeter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jdp.altimeter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2935E5452209F754005AE439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5SSV796L2;
+				INFOPLIST_FILE = altimeter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jdp.altimeter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2935E5472209F754005AE439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5SSV796L2;
+				INFOPLIST_FILE = altimeterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jdp.altimeterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/altimeter.app/altimeter";
+			};
+			name = Debug;
+		};
+		2935E5482209F754005AE439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5SSV796L2;
+				INFOPLIST_FILE = altimeterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jdp.altimeterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/altimeter.app/altimeter";
+			};
+			name = Release;
+		};
+		2935E54A2209F754005AE439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5SSV796L2;
+				INFOPLIST_FILE = altimeterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jdp.altimeterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = altimeter;
+			};
+			name = Debug;
+		};
+		2935E54B2209F754005AE439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5SSV796L2;
+				INFOPLIST_FILE = altimeterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jdp.altimeterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = altimeter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2935E4EC2209F751005AE439 /* Build configuration list for PBXProject "altimeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2935E5392209F754005AE439 /* Debug */,
+				2935E53A2209F754005AE439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2935E53B2209F754005AE439 /* Build configuration list for PBXNativeTarget "altimeter WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2935E53C2209F754005AE439 /* Debug */,
+				2935E53D2209F754005AE439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2935E53F2209F754005AE439 /* Build configuration list for PBXNativeTarget "altimeter WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2935E5402209F754005AE439 /* Debug */,
+				2935E5412209F754005AE439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2935E5432209F754005AE439 /* Build configuration list for PBXNativeTarget "altimeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2935E5442209F754005AE439 /* Debug */,
+				2935E5452209F754005AE439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2935E5462209F754005AE439 /* Build configuration list for PBXNativeTarget "altimeterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2935E5472209F754005AE439 /* Debug */,
+				2935E5482209F754005AE439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2935E5492209F754005AE439 /* Build configuration list for PBXNativeTarget "altimeterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2935E54A2209F754005AE439 /* Debug */,
+				2935E54B2209F754005AE439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2935E4E92209F751005AE439 /* Project object */;
+}
