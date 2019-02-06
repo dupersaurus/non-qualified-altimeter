@@ -70,29 +70,28 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
         
         cumulativeDelta = 0;
         var amount = 0;
+        let absolute = abs(rotationalDelta)
         
-        switch abs(rotationalDelta) {
-        case 0..<0.02:
+        switch absolute {
+        case 0..<minimumDelta:
             amount = 1
             
-        case 0.02..<0.03:
+        case minimumDelta..<0.03:
             amount = 2
             
-        case 0.03..<0.06:
-            amount = Int(rotationalDelta * 20.0)
+        case 0.03..<0.04:
+            amount = Int(absolute * 20.0)
             
-        case 0.06..<0.1:
-            amount = Int(rotationalDelta * 50.0)
+        case 0.04..<0.06:
+            amount = Int(absolute * 50.0)
             
         default:
-            amount = Int(rotationalDelta * 100.0)
+            amount = Int(absolute * 100.0)
         }
         
         if rotationalDelta < 0 {
             amount *= -1
         }
-        
-        print("\(rotationalDelta),")
         
         let nextQNH = lastQNH + amount;
         updateDisplay(data: barometerService.setQNH(qnh: nextQNH))
