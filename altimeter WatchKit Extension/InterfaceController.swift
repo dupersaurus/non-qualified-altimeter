@@ -18,6 +18,9 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
     let barometerService = BarometerService()
     var lastQNH = 2992
     
+    var cumulativeDelta = 0.0
+    let minimumDelta = 0.02
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -59,7 +62,39 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
     }
 
     func crownDidRotate(_ crownSequencer: WKCrownSequencer?, rotationalDelta: Double) {
-        let nextQNH = lastQNH + Int(rotationalDelta * 100.0);
+        cumulativeDelta += rotationalDelta
+        
+        if abs(cumulativeDelta) < minimumDelta {
+            return
+        }
+        
+        cumulativeDelta = 0;
+        var amount = 0;
+        
+        switch abs(rotationalDelta) {
+        case 0..<0.02:
+            amount = 1
+            
+        case 0.02..<0.03:
+            amount = 2
+            
+        case 0.03..<0.06:
+            amount = Int(rotationalDelta * 20.0)
+            
+        case 0.06..<0.1:
+            amount = Int(rotationalDelta * 50.0)
+            
+        default:
+            amount = Int(rotationalDelta * 100.0)
+        }
+        
+        if rotationalDelta < 0 {
+            amount *= -1
+        }
+        
+        print("\(rotationalDelta),")
+        
+        let nextQNH = lastQNH + amount;
         updateDisplay(data: barometerService.setQNH(qnh: nextQNH))
     }
     
