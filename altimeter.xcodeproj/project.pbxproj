@@ -23,6 +23,8 @@
 		2935E5322209F754005AE439 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E5312209F754005AE439 /* NotificationController.swift */; };
 		2935E5342209F754005AE439 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E5332209F754005AE439 /* ComplicationController.swift */; };
 		2935E5362209F754005AE439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2935E5352209F754005AE439 /* Assets.xcassets */; };
+		2935E54D2209F914005AE439 /* BarometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E54C2209F914005AE439 /* BarometerService.swift */; };
+		2935E54E2209F914005AE439 /* BarometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E54C2209F914005AE439 /* BarometerService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,7 @@
 		2935E5352209F754005AE439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2935E5372209F754005AE439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2935E5382209F754005AE439 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		2935E54C2209F914005AE439 /* BarometerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarometerService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,7 @@
 				2935E4FB2209F753005AE439 /* Assets.xcassets */,
 				2935E4FD2209F753005AE439 /* LaunchScreen.storyboard */,
 				2935E5002209F753005AE439 /* Info.plist */,
+				2935E54C2209F914005AE439 /* BarometerService.swift */,
 			);
 			path = altimeter;
 			sourceTree = "<group>";
@@ -412,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2935E54D2209F914005AE439 /* BarometerService.swift in Sources */,
 				2935E4F72209F751005AE439 /* ViewController.swift in Sources */,
 				2935E4F52209F751005AE439 /* AppDelegate.swift in Sources */,
 			);
@@ -440,6 +445,7 @@
 				2935E5322209F754005AE439 /* NotificationController.swift in Sources */,
 				2935E5342209F754005AE439 /* ComplicationController.swift in Sources */,
 				2935E5302209F754005AE439 /* ExtensionDelegate.swift in Sources */,
+				2935E54E2209F914005AE439 /* BarometerService.swift in Sources */,
 				2935E52E2209F754005AE439 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
