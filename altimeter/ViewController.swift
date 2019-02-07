@@ -16,6 +16,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var altitudeValue: UILabel!
     @IBOutlet weak var pressureValues: UIPickerView!
     
+    let metarService = METARService()
     let barometerService = BarometerService()
     var pressureValueList: [Int] = []
     var selectedPressureValue = 182;
@@ -111,6 +112,20 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         let formatter = NumberFormatter()
         formatter.usesGroupingSeparator = true
         return formatter.string(for: Int(altitude)) ?? "--"
+    }
+    
+    @IBAction func onMetarSearch(_ sender: Any) {
+        makeMETARRequest()
+    }
+    
+    func makeMETARRequest() {
+        metarService.getNearby() {
+            metars in
+            
+            for metar in metars {
+                print(metar.raw ?? "Raw METAR not available")
+            }
+        }
     }
 }
 

@@ -25,6 +25,18 @@
 		2935E5362209F754005AE439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2935E5352209F754005AE439 /* Assets.xcassets */; };
 		2935E54D2209F914005AE439 /* BarometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E54C2209F914005AE439 /* BarometerService.swift */; };
 		2935E54E2209F914005AE439 /* BarometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E54C2209F914005AE439 /* BarometerService.swift */; };
+		29613AC0220BE9A60097039C /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29613ABB220BE9A60097039C /* Error.swift */; };
+		29613AC1220BE9A60097039C /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29613ABB220BE9A60097039C /* Error.swift */; };
+		29613AC2220BE9A60097039C /* Accessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29613ABC220BE9A60097039C /* Accessor.swift */; };
+		29613AC3220BE9A60097039C /* Accessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29613ABC220BE9A60097039C /* Accessor.swift */; };
+		29613AC4220BE9A60097039C /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29613ABD220BE9A60097039C /* Element.swift */; };
+		29613AC5220BE9A60097039C /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29613ABD220BE9A60097039C /* Element.swift */; };
+		29613AC6220BE9A60097039C /* XML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29613ABE220BE9A60097039C /* XML.swift */; };
+		29613AC7220BE9A60097039C /* XML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29613ABE220BE9A60097039C /* XML.swift */; };
+		29613AC8220BE9A60097039C /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29613ABF220BE9A60097039C /* Parser.swift */; };
+		29613AC9220BE9A60097039C /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29613ABF220BE9A60097039C /* Parser.swift */; };
+		29B67F01220B584900AC5911 /* METARService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B67F00220B584800AC5911 /* METARService.swift */; };
+		29B67F02220B584900AC5911 /* METARService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B67F00220B584800AC5911 /* METARService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +122,12 @@
 		2935E5372209F754005AE439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2935E5382209F754005AE439 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		2935E54C2209F914005AE439 /* BarometerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarometerService.swift; sourceTree = "<group>"; };
+		29613ABB220BE9A60097039C /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		29613ABC220BE9A60097039C /* Accessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accessor.swift; sourceTree = "<group>"; };
+		29613ABD220BE9A60097039C /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		29613ABE220BE9A60097039C /* XML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XML.swift; sourceTree = "<group>"; };
+		29613ABF220BE9A60097039C /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		29B67F00220B584800AC5911 /* METARService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = METARService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +153,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2935E5252209F754005AE439 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F4A795D62B3FFB94EBD079 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -171,6 +196,7 @@
 		2935E4F32209F751005AE439 /* altimeter */ = {
 			isa = PBXGroup;
 			children = (
+				29613ABA220BE9A60097039C /* SwiftyXMLParser */,
 				2935E4F42209F751005AE439 /* AppDelegate.swift */,
 				2935E4F62209F751005AE439 /* ViewController.swift */,
 				2935E4F82209F751005AE439 /* Main.storyboard */,
@@ -178,6 +204,7 @@
 				2935E4FD2209F753005AE439 /* LaunchScreen.storyboard */,
 				2935E5002209F753005AE439 /* Info.plist */,
 				2935E54C2209F914005AE439 /* BarometerService.swift */,
+				29B67F00220B584800AC5911 /* METARService.swift */,
 			);
 			path = altimeter;
 			sourceTree = "<group>";
@@ -222,6 +249,18 @@
 				2935E5382209F754005AE439 /* PushNotificationPayload.apns */,
 			);
 			path = "altimeter WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		29613ABA220BE9A60097039C /* SwiftyXMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				29613ABB220BE9A60097039C /* Error.swift */,
+				29613ABC220BE9A60097039C /* Accessor.swift */,
+				29613ABD220BE9A60097039C /* Element.swift */,
+				29613ABE220BE9A60097039C /* XML.swift */,
+				29613ABF220BE9A60097039C /* Parser.swift */,
+			);
+			path = SwiftyXMLParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +327,7 @@
 			buildPhases = (
 				2935E5172209F753005AE439 /* Resources */,
 				2935E53E2209F754005AE439 /* Embed App Extensions */,
+				94F4A795D62B3FFB94EBD079 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -418,7 +458,13 @@
 			files = (
 				2935E54D2209F914005AE439 /* BarometerService.swift in Sources */,
 				2935E4F72209F751005AE439 /* ViewController.swift in Sources */,
+				29613AC2220BE9A60097039C /* Accessor.swift in Sources */,
 				2935E4F52209F751005AE439 /* AppDelegate.swift in Sources */,
+				29613AC0220BE9A60097039C /* Error.swift in Sources */,
+				29613AC8220BE9A60097039C /* Parser.swift in Sources */,
+				29613AC6220BE9A60097039C /* XML.swift in Sources */,
+				29613AC4220BE9A60097039C /* Element.swift in Sources */,
+				29B67F01220B584900AC5911 /* METARService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,10 +489,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2935E5322209F754005AE439 /* NotificationController.swift in Sources */,
+				29613AC9220BE9A60097039C /* Parser.swift in Sources */,
 				2935E5342209F754005AE439 /* ComplicationController.swift in Sources */,
+				29613AC5220BE9A60097039C /* Element.swift in Sources */,
 				2935E5302209F754005AE439 /* ExtensionDelegate.swift in Sources */,
 				2935E54E2209F914005AE439 /* BarometerService.swift in Sources */,
+				29613AC7220BE9A60097039C /* XML.swift in Sources */,
+				29613AC3220BE9A60097039C /* Accessor.swift in Sources */,
 				2935E52E2209F754005AE439 /* InterfaceController.swift in Sources */,
+				29613AC1220BE9A60097039C /* Error.swift in Sources */,
+				29B67F02220B584900AC5911 /* METARService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

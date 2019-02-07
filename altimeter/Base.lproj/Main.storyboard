@@ -75,7 +75,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHQ-b9-qLJ">
-                                <rect key="frame" x="0.0" y="607" width="186" height="40"/>
+                                <rect key="frame" x="0.0" y="517" width="186" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Set QNH"/>
                                 <connections>
@@ -83,7 +83,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrz-Ah-vPO">
-                                <rect key="frame" x="204" y="607" width="171" height="40"/>
+                                <rect key="frame" x="204" y="517" width="171" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Set Baro"/>
                                 <connections>
@@ -91,9 +91,18 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OnA-Dl-N7b">
-                                <rect key="frame" x="141" y="383" width="93" height="216"/>
+                                <rect key="frame" x="141" y="293" width="93" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWy-GC-0B7">
+                                <rect key="frame" x="94" y="607" width="186" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Set From METAR"/>
+                                <connections>
+                                    <action selector="onMetarSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JAH-qD-t4z"/>
+                                    <action selector="submitQNH:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xj4-2Z-TMu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
