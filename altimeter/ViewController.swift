@@ -70,6 +70,22 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         applyAltitudeData(data: altimeter)
     }
     
+    func setQNH(qnh: Double) {
+        let altimeter = barometerService.setIndicatedPressure(inHg: Int(qnh * 100))
+        
+        DispatchQueue.main.async() {
+            self.applyAltitudeData(data: altimeter)
+        }
+    }
+    
+    func setQNH(qnh: Int) {
+        let altimeter = barometerService.setIndicatedPressure(inHg: qnh)
+        
+        DispatchQueue.main.async() {
+            self.applyAltitudeData(data: altimeter)
+        }
+    }
+    
     func convertPressureText(text: String) -> Double {
         let scale: Int16 = 2
         let behavior = NSDecimalNumberHandler(roundingMode: .plain, scale: scale, raiseOnExactness: false, raiseOnOverflow: false, raiseOnUnderflow: false, raiseOnDivideByZero: true)
@@ -122,8 +138,20 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         metarService.getNearby() {
             metars in
             
+            var closest: METAR? = nil
+            
             for metar in metars {
-                print(metar.raw ?? "Raw METAR not available")
+                print("\(metar.value.distance)nm \(metar.value.raw)" ?? "Raw METAR not available")
+                
+                if closest == nil {
+                    closest = metar.value
+                } else if (metar.value.distance < closest!.distance) {
+                    closest = metar.value
+                }
+            }
+            
+            if closest != nil {
+                self.setQNH(qnh: closest!.qnh)
             }
         }
     }
