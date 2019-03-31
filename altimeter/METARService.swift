@@ -96,6 +96,24 @@ class METARService {
         }
     }
     
+    func getClosest(callback: @escaping (METAR?) -> Void) {
+        getNearby {
+            metars in
+            
+            var closest: METAR? = nil
+            
+            for metar in metars {
+                if closest == nil {
+                    closest = metar.value
+                } else if (metar.value.distance < closest!.distance) {
+                    closest = metar.value
+                }
+            }
+            
+            callback(closest)
+        }
+    }
+    
     /// make a request to Aviation Weather Service api
     private func AWSRequest(distance: Int, longitude: Double, latitude: Double, callback: @escaping (XML.Accessor) -> Void) {
         let query = "radialDistance=\(distance);\(longitude),\(latitude)&hoursBeforeNow=1"

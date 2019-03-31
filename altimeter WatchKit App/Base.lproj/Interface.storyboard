@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch40" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -17,7 +17,7 @@
                         <group width="1" height="55" alignment="left" id="MCL-O3-dRY">
                             <items>
                                 <label width="35" height="32" alignment="left" verticalAlignment="bottom" text="QNH" id="ceg-Yx-5If"/>
-                                <label width="93" height="48" alignment="left" verticalAlignment="bottom" text="29.92" textAlignment="right" id="oI2-zN-oSF">
+                                <label width="93" height="48" alignment="left" verticalAlignment="bottom" text="..." textAlignment="right" id="oI2-zN-oSF">
                                     <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
                                 </label>
                             </items>
@@ -25,10 +25,19 @@
                         <group width="1" alignment="left" id="Otd-bi-sDI">
                             <items>
                                 <label alignment="left" verticalAlignment="bottom" text="Alt" id="je6-32-SpG"/>
-                                <label width="108" alignment="left" verticalAlignment="bottom" text="99999" textAlignment="right" id="Cn1-qS-3Uj">
+                                <label width="108" alignment="left" verticalAlignment="bottom" text="..." textAlignment="right" id="Cn1-qS-3Uj">
                                     <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
                                 </label>
                                 <label width="23" alignment="left" verticalAlignment="bottom" text="ft" textAlignment="right" numberOfLines="2" id="wMH-M5-4Xh"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="Bfb-9Z-vSL">
+                            <items>
+                                <button width="1" alignment="left" title="Get METAR" id="6PA-hS-QkT">
+                                    <connections>
+                                        <action selector="getMETARAltimeter" destination="AgC-eL-Hgc" id="hEC-pG-joe"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                     </items>
@@ -38,7 +47,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="219.95061728395061" y="344.74619289340097"/>
+            <point key="canvasLocation" x="52" y="176"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

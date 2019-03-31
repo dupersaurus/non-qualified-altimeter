@@ -16,6 +16,7 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
     @IBOutlet weak var altitudeDisplay: WKInterfaceLabel!
     
     let barometerService = BarometerService()
+    let metarService = METARService()
     var lastQNH = 2992
     
     var cumulativeDelta = 0.0
@@ -26,6 +27,8 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
         
         // Configure interface objects here.
         crownSequencer.delegate = self
+        
+        showLoadingDisplay()
     }
     
     override func willActivate() {
@@ -53,6 +56,27 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+    
+    @IBAction func getMETARAltimeter() {
+        DispatchQueue.main.async() {
+            self.showLoadingDisplay()
+        }
+        
+        metarService.getClosest() {
+            closest in
+            
+            if let metar = closest {
+                DispatchQueue.main.async() {
+                    self.updateDisplay(data: self.barometerService.setQNH(qnh: Int(metar.qnh * 100)))
+                }
+            }
+        }
+    }
+    
+    func showLoadingDisplay() {
+        self.qnhDisplay.setText("...")
+        self.altitudeDisplay.setText("...")
     }
     
     func updateDisplay(data: AltitudeData) {
