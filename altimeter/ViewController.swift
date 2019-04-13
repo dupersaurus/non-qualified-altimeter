@@ -113,11 +113,13 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     func inHgToString(inhg: Int) -> String {
-        return "\(inhg / 100).\(inhg % 100)"
+        let fraction = inhg % 100
+        return "\(inhg / 100).\(fraction >= 10 ? String(fraction) : "0\(fraction)")"
     }
     
     func inHgToString(inhg: Double) -> String {
-        return "\(Int(inhg)).\(Int(inhg * 100) % 100)"
+        let fraction = Int(inhg * 100) % 100
+        return "\(inhg / 100).\(fraction >= 10 ? String(fraction) : "0\(fraction)")"
     }
     
     func altitudeToString(altitude: Double) -> String {

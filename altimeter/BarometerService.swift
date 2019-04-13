@@ -68,8 +68,8 @@ class BarometerService {
     }
     
     func setIndicatedPressure(inHg: Int) -> AltitudeData {
-        let tmp = Double(inHg) / 100;
-        self.lastKPA = (tmp / 10) * 33.8639;
+        qnh = Double(inHg) / 100;
+        self.lastKPA = (qnh / 10) * 33.8639;
         return calculateAltitudeComponents(pressureKPA: lastKPA)
     }
     
